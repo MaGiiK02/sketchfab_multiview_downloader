@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>multi_view_downloader</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+
+  <body>
+    <header class="header">
+        
+    </header>
+
+    <div class="app">
+        <div class="panel">
+
+            <div class="viewer">
+                <iframe src="" id="api-frame" allow="autoplay; fullscreen; vr" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" class="hidden"></iframe>
+                <div class="loader"></div>
+            </div><!--viewer end-->
+
+            <div class="sidebar">
+            </div><!--sidebar end-->
+            
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.0.js"></script>
+    
+    <!-- build:js scripts/vendor.js -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="/scripts/data.js"></script>
+    <script type="text/javascript" src="/scripts/helper.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

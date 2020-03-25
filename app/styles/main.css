@@ -1,0 +1,41 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.app {
+    box-sizing: border-box;
+    height: calc(100% - 60px);
+    padding: 30px;
+}
+
+.panel {
+    box-sizing: border-box;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    border-radius: 3px;
+}
+
+.sidebar {
+    flex: 0 0 320px;
+    padding: 0 20px;
+    color: #555;
+    overflow: auto;
+    float: left;
+}
+
+.viewer {
+  width: 80%;
+  min-width: 80%;
+  float: left;
+}
+
+iframe{
+  width: 100%;
+  min-width: 100%;
+  height: 80%;
+  width: fit-content;
+}
