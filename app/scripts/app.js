@@ -95,7 +95,12 @@ var invalidUids = [];
 function process(uids, promise){
 
     promise.then(() => {
-        if(uids.length <= 0) return;
+        if(uids.length <= 0) {
+            console.log("All the request UIDs have been processed!");
+            console.log("The follwoing UIDs have been skipped due to errors:");
+            console.lof(invalidUids);
+            return;
+        }
         const [uid, ...rest] = uids;
         console.log(uid);
         const innerPromise = new Promise((resolve) => {
